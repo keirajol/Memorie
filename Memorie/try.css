@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+main h1 {
+
+    width: 50px;
+}
+.side-bars img {
+    width: 200px;
+}
+
+.side-bars {
+    background-color: pink;
+    width: 20%;
+    height: 100vh;
+}

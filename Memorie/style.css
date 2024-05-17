@@ -1,0 +1,80 @@
+body {
+  background-color: #F2D2F1;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main img {
+  width: 10%;
+  height: 10%;
+}
+.btn {
+  background-color: #E191CA;
+  padding: 0% 1.5%;
+  margin: 2%;
+  border-radius: 20px;
+  border: 1px solid #DC07AD;
+}
+.person-2 {
+  background-color: #E191CA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.game-board {
+  background-color: #E29BDF;
+  padding: 2%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kaarten {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: #ffffff;
+  transition: 0.25s;
+  transform: rotateY(180deg);
+}
+.item .boxopen {
+  transform: rotateY(0deg);
+}
+.item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: palevioletred;
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden; 
+}
+.boxopen::after,
+.boxMatch::after {
+  transform: rotateY(180deg);
+}
