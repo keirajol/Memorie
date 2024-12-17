@@ -56,8 +56,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(15% - 10px); /* Past 5 kaarten per rij in het vierkant */
-  height: calc(20% - 10px); /* Zorgt ervoor dat de kaarten vierkant blijven */
+  width: calc(15% - 10px); 
+  height: calc(20% - 10px); 
   font-size: 13rem;
   background-color: #ffffff;
   border: 1px solid #E191CA;
