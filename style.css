@@ -16,6 +16,7 @@ main {
 h1 {
   color: #DC07AD;
   font-size: 40px;
+  margin-bottom: 0;
 }
 
 .board {
@@ -87,11 +88,11 @@ h1 {
 }
 
 .btn {
-  height: 50px;
-  width: 100px;
+  height: 40px;
+  width: 150px;
   background-color: #E191CA;
   margin: 1rem;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 1px solid #DC07AD;
   color: #ffffff;
   font-size: 10PX;
