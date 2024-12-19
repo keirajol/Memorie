@@ -15,7 +15,7 @@ main {
 
 h1 {
   color: #DC07AD;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .board {
@@ -87,14 +87,14 @@ h1 {
 }
 
 .btn {
-  height: 100px;
-  width: 350px;
+  height: 50px;
+  width: 100px;
   background-color: #E191CA;
   margin: 1rem;
   border-radius: 20px;
   border: 1px solid #DC07AD;
   color: #ffffff;
-  font-size: 5rem;
+  font-size: 20PX;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
