@@ -113,3 +113,41 @@ h1 {
   background-color: #DC07AD;
   transform: scale(1.05);
 }
+.melding {
+  color: #ff8c00;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.melding-blok {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+
+.confetti {
+  position: fixed;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(calc(360 * var(--i, 1)), 70%, 60%);
+  animation: fall 3s linear infinite;
+  z-index: 1000;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}

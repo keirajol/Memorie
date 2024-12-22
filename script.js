@@ -29,16 +29,29 @@ for (var i=0; i<emojis.length; i++) {
 }
 
 function toonMelding(bericht) {
-  const meldingElement = document.createElement('div'); // maakt soort van een blok aan voor de meldingen
-  meldingElement.className = 'melding-blok'; // class toevoegen
-  meldingElement.innerText = bericht; // tekst van de meldingen
+  const meldingElement = document.createElement('div');
+  meldingElement.className = 'melding-blok';
+  meldingElement.innerText = bericht;
 
-  
-  document.body.appendChild(meldingElement); // het toevoegen van de meldingen aan het scherm
+  document.body.appendChild(meldingElement);
 
-  // Verwijder de melding na 3 seconden
+  startConfetti();
+
   setTimeout(() => {
-      meldingElement.remove();
+    meldingElement.remove();
   }, 3000);
-
 }
+
+function startConfetti() {
+  for (let i = 0; i < 100; i++) {
+    let confetti = document.createElement('div');
+    confetti.className = 'confetti';
+    confetti.style.left = `${Math.random() * 100}vw`;
+    confetti.style.animationDelay = `${Math.random() * 2}s`;
+
+    document.body.appendChild(confetti);
+
+    setTimeout(() => confetti.remove(), 5000);
+  }
+}
+
